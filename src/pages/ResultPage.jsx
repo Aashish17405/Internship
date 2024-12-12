@@ -1,56 +1,223 @@
 import Button from "../components/Button";
 import Navbar from "../components/Navbar";
+import Footer from '../components/Footer'
+import Searchbar from "../components/Searchbar";
+import sunEnergy from '../assets/1stsunergy.png';
+import ES2 from '../assets/2es.png';
+import energy3D from '../assets/3d_energy.png';
+import solar3G from '../assets/3gsolar.png'
+import Card from "../components/Card";
+import final from '../assets/image.png';
+import mapPinIcon from '../assets/mapPin.svg';
+import phoneIcon from '../assets/phoneIcon.svg'
+import globeIcon from '../assets/globeIcon.svg';
+import searchIcon from '../assets/searchIcon.svg';
+import popularIcon from '../assets/popularIcon.svg'
 
 function ResultPage(){
+    const firstCards = [
+        {
+            image: sunEnergy,
+            title: 'First Sunenergy LLC',
+            description: 'Monocrystalline, Polycrystalline Power Range(Wp): 175-290'
+        },{
+            image: ES2,
+            title: '2ES',
+            description: 'Monocrystalline, Polycrystalline, BIPV Power Range(Wp): 135-150'
+        },{
+            image: energy3D,
+            title: '3D Energy',
+            description: 'Distributor'
+        },{
+            image: solar3G,
+            title: '3G-Solar GmbH',
+            description: 'Monocrystalline, Polycrystalline Power Range(Wp): 155-300'
+        },{
+            image: energy3D,
+            title: '3D Energy',
+            description: 'Distributor'
+        },{
+            image: sunEnergy,
+            title: 'First Sunenergy LLC',
+            description: 'Monocrystalline, Polycrystalline Power Range(Wp): 175-290'
+        },{
+            image: solar3G,
+            title: '3G-Solar GmbH',
+            description: 'Monocrystalline, Polycrystalline Power Range(Wp): 155-300'
+        },{
+            image: ES2,
+            title: '2ES',
+            description: 'Monocrystalline, Polycrystalline, BIPV Power Range(Wp): 135-150'
+        }
+    ];
+
+    const secondCards = [
+        {
+            image: sunEnergy,
+            title: 'First Sunenergy LLC',
+            description: 'Monocrystalline, Polycrystalline Power Range(Wp): 175-290'
+        },{
+            image: energy3D,
+            title: '3D Energy',
+            description: 'Distributor'
+        },{
+            image: ES2,
+            title: '2ES',
+            description: 'Monocrystalline, Polycrystalline, BIPV Power Range(Wp): 135-150'
+        },{
+            image: solar3G,
+            title: '3G-Solar GmbH',
+            description: 'Monocrystalline, Polycrystalline Power Range(Wp): 155-300'
+        },{
+            image: sunEnergy,
+            title: 'First Sunenergy LLC',
+            description: 'Monocrystalline, Polycrystalline Power Range(Wp): 175-290'
+        },{
+            image: ES2,
+            title: '2ES',
+            description: 'Monocrystalline, Polycrystalline, BIPV Power Range(Wp): 135-150'
+        },{
+            image: energy3D,
+            title: '3D Energy',
+            description: 'Distributor'
+        },{
+            image: solar3G,
+            title: '3G-Solar GmbH',
+            description: 'Monocrystalline, Polycrystalline Power Range(Wp): 155-300'
+        }
+    ];
+
     return <div className="text-[#4E5562]">
-        <Navbar/>
-
-        <div className="flex items-center gap-4 border border-gray-300 shadow-lg py-3 px-4 rounded-full text-[#6B7280] w-5/12 mx-auto">
-            <div className="flex items-center gap-2 ml-2">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" clipRule="evenodd" d="M1.59375 2.25C1.59375 1.88756 1.88756 1.59375 2.25 1.59375H7.5C7.86244 1.59375 8.15625 1.88756 8.15625 2.25V7.5C8.15625 7.86244 7.86244 8.15625 7.5 8.15625H2.25C1.88756 8.15625 1.59375 7.86244 1.59375 7.5V2.25ZM2.90625 2.90625V6.84375H6.84375V2.90625H2.90625Z" fill="#4E5562" />
-                <path fillRule="evenodd" clipRule="evenodd" d="M9.84375 2.25C9.84375 1.88756 10.1376 1.59375 10.5 1.59375H15.75C16.1124 1.59375 16.4062 1.88756 16.4062 2.25V7.5C16.4062 7.86244 16.1124 8.15625 15.75 8.15625H10.5C10.1376 8.15625 9.84375 7.86244 9.84375 7.5V2.25ZM11.1562 2.90625V6.84375H15.0938V2.90625H11.1562Z" fill="#4E5562" />
-                <path fillRule="evenodd" clipRule="evenodd" d="M9.84375 10.5C9.84375 10.1376 10.1376 9.84375 10.5 9.84375H15.75C16.1124 9.84375 16.4062 10.1376 16.4062 10.5V15.75C16.4062 16.1124 16.1124 16.4062 15.75 16.4062H10.5C10.1376 16.4062 9.84375 16.1124 9.84375 15.75V10.5ZM11.1562 11.1562V15.0938H15.0938V11.1562H11.1562Z" fill="#4E5562" />
-                <path fillRule="evenodd" clipRule="evenodd" d="M1.59375 10.5C1.59375 10.1376 1.88756 9.84375 2.25 9.84375H7.5C7.86244 9.84375 8.15625 10.1376 8.15625 10.5V15.75C8.15625 16.1124 7.86244 16.4062 7.5 16.4062H2.25C1.88756 16.4062 1.59375 16.1124 1.59375 15.75V10.5ZM2.90625 11.1562V15.0938H6.84375V11.1562H2.90625Z" fill="#4E5562" />
-            </svg>
-            <select className="bg-transparent focus:outline-none text-base mr-16">
-                <option value="">Country</option>
-                <option value="Afghanistan">Afghanistan</option>
-                <option value="Albania">Albania</option>
-                <option value="Algeria">Algeria</option>
-                <option value="Andora">Andora</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Armenia">Armenia</option>
-            </select>
+    <Navbar />
+    <Searchbar />
+    <div className="container mx-auto px-4 md:px-8 mt-10">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+            <div>Showing 116 results</div>
+            <div className="flex flex-wrap gap-4">
+                <div className="w-full sm:w-auto flex border border-[#CAD0D9] rounded-3xl p-2 pl-3 pr-2 items-center">
+                    <div className="ml-2">
+                        <img src={searchIcon} alt="search" />
+                    </div>
+                    <input
+                        id="default-search"
+                        className="w-full sm:w-auto ml-3 border-none focus:outline-none"
+                        placeholder="Search by keywords"
+                        required
+                    />
+                </div>
+                <div className="w-full sm:w-auto flex items-center gap-2 border border-[#CAD0D9] rounded-3xl p-2">
+                    <div className="ml-4">
+                        <img src={mapPinIcon} alt="map icon" />
+                    </div>
+                    <select className="bg-transparent focus:outline-none pr-10">
+                        <option value="">City</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Andora">Andora</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Armenia">Armenia</option>
+                    </select>
+                </div>
+                <div className="w-full sm:w-auto flex items-center gap-2 border border-[#CAD0D9] rounded-3xl p-2">
+                    <div className="ml-4">
+                        <img src={popularIcon} alt="popular icon" />
+                    </div>
+                    <select className="bg-transparent focus:outline-none pr-10">
+                        <option value="">Popular</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Andora">Andora</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Armenia">Armenia</option>
+                    </select>
+                </div>
             </div>
-
-            <span className="h-6 border-l border-gray-300"></span>
-
-            <div className="flex items-center gap-2 flex-grow">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" clipRule="evenodd" d="M8.25 2.90625C5.29873 2.90625 2.90625 5.29873 2.90625 8.25C2.90625 11.2013 5.29873 13.5938 8.25 13.5938C11.2013 13.5938 13.5938 11.2013 13.5938 8.25C13.5938 5.29873 11.2013 2.90625 8.25 2.90625ZM1.59375 8.25C1.59375 4.57385 4.57385 1.59375 8.25 1.59375C11.9261 1.59375 14.9062 4.57385 14.9062 8.25C14.9062 11.9261 11.9261 14.9062 8.25 14.9062C4.57385 14.9062 1.59375 11.9261 1.59375 8.25Z" fill="#4E5562" />
-                <path fillRule="evenodd" clipRule="evenodd" d="M12.0235 12.0235C12.2797 11.7672 12.6953 11.7672 12.9515 12.0235L16.214 15.286C16.4703 15.5422 16.4703 15.9578 16.214 16.214C15.9578 16.4703 15.5422 16.4703 15.286 16.214L12.0235 12.9515C11.7672 12.6953 11.7672 12.2797 12.0235 12.0235Z" fill="#4E5562" />
-            </svg>
-            <select className="bg-transparent focus:outline-none text-base w-full">
-                <option value="" className="hover:text-black">What are you looking for?</option>
-                <option value="Installer" className="hover:text-black">Installer</option>
-                <option value="Panels" className="hover:text-black">Panels</option>
-                <option value="Components" className="hover:text-black">Components</option>
-                <option value="Material" className="hover:text-black">Material</option>
-                <option value="Equipment" className="hover:text-black">Equipment</option>
-                <option value="Manufacturers" className="hover:text-black">Manufacturers</option>
-            </select>
-            </div>
-            <Button btnContent={"Search"}  />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-7">
+            {firstCards.map((card, index) => (
+                <div key={index} className="w-full">
+                    <Card
+                        image={card.image}
+                        title={card.title}
+                        description={card.description}
+                    />
+                </div>
+            ))}
         </div>
 
-        <div className="mx-10 mt-10">
-            <div>
-                <div>Showing 116 results</div>
-                
+        <div className="flex flex-col md:flex-row border border-[#CAD0D9] bg-white rounded-lg my-6 h-80">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:w-1/2 p-6">
+                <div className="flex flex-col w-full md:w-5/6">
+                    <img
+                        src={sunEnergy}
+                        alt="Sun Energy Logo"
+                        className="w-full h-auto"
+                    />
+                    <div className="space-y-3 mt-4">
+                        <div className="flex items-center space-x-2">
+                            <img src={mapPinIcon} alt="Map Pin Icon" className="w-5 h-5" />
+                            <span>Houston, TX</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                            <img src={phoneIcon} alt="Phone Icon" className="w-5 h-5" />
+                            <span>+1 7135 130 423</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                            <img src={globeIcon} alt="Globe Icon" className="w-5 h-5" />
+                            <a
+                                href="http://www.firstsunergy.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                            >
+                                Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-col justify-center space-y-3">
+                    <h3 className="text-[#4E5562] text-2xl">Highly reputable</h3>
+                    <p className="text-2xl text-[#4E5562]">
+                        <span className="text-2xl font-bold text-[#111827]">
+                            clean energy
+                        </span>{" "}
+                        products
+                    </p>
+                    <p className="text-[#4E5562] text-2xl">& services provider</p>
+                    <p className="text-2xl text-[#4E5562]">
+                        and{" "}
+                        <span className="text-2xl font-bold text-[#111827]">
+                            global distributor
+                        </span>
+                    </p>
+                </div>
             </div>
+
+            <div className="md:w-1/2 flex justify-end">
+                <img
+                    src={final}
+                    alt="Family and Solar Panel"
+                    className="object-cover max-w-full max-h-full rounded-r-lg"
+                />
+            </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {secondCards.map((card, index) => (
+                <div key={index} className="w-full">
+                    <Card
+                        image={card.image}
+                        title={card.title}
+                        description={card.description}
+                    />
+                </div>
+            ))}
         </div>
     </div>
+    <Footer />
+</div>
+
 }
 
 export default ResultPage;

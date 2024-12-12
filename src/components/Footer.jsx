@@ -1,71 +1,35 @@
+import instaIcon from '../assets/instagramIcon.svg';
+import fbIcon from '../assets/fbIcon.svg';
+import xIcon from '../assets/XIcon.svg';
+
 function Footer() {
-    return (
-      <div className="flex justify-around text-[#4E5562] py-4" style={{marginTop:'110PX'}}>
-        <div className="flex items-center gap-2">
-          <h6>Need help?</h6>
-          <h6 className="font-bold">Contact us</h6>
-        </div>
-        <div className="flex items-center gap-4">
-          <svg
-            width="15"
-            height="14"
-            viewBox="0 0 15 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_3_31)">
-              <path
-                d="M7.50208 3.40552C5.517 3.40552 3.90991 5.01435 3.90991 6.99768C3.90991 8.98277 5.51875 10.5899 7.50208 10.5899C9.48716 10.5899 11.0942 8.98102 11.0942 6.99768C11.0942 5.0126 9.48541 3.40552 7.50208 3.40552ZM7.50208 9.32927C6.2135 9.32927 5.1705 8.28568 5.1705 6.99768C5.1705 5.70968 6.21408 4.6661 7.50208 4.6661C8.79008 4.6661 9.83366 5.70968 9.83366 6.99768C9.83425 8.28568 8.79066 9.32927 7.50208 9.32927Z"
-                fill="#1D2735"
-              />
-              <path
-                d="M10.3862 0.0443418C9.09822 -0.0157416 5.90797 -0.0128249 4.6188 0.0443418C3.48597 0.0974251 2.48672 0.371008 1.68114 1.17659C0.334805 2.52293 0.506888 4.33709 0.506888 6.99768C0.506888 9.72068 0.355222 11.4928 1.68114 12.8188C3.03272 14.1698 4.87314 13.993 7.50222 13.993C10.1996 13.993 11.1306 13.9948 12.0843 13.6255C13.3811 13.1221 14.3599 11.963 14.4556 9.88109C14.5162 8.59251 14.5127 5.40284 14.4556 4.11368C14.3401 1.65609 13.0211 0.165675 10.3862 0.0443418ZM12.425 11.928C11.5424 12.8106 10.318 12.7318 7.4853 12.7318C4.56864 12.7318 3.39906 12.775 2.54564 11.9193C1.56272 10.941 1.74064 9.37009 1.74064 6.98834C1.74064 3.76543 1.40989 1.44434 4.64447 1.27868C5.38764 1.25243 5.60639 1.24368 7.47714 1.24368L7.50339 1.26118C10.612 1.26118 13.0509 0.935675 13.1973 4.16968C13.2306 4.90759 13.2381 5.12926 13.2381 6.99709C13.2376 9.87993 13.2924 11.0565 12.425 11.928Z"
-                fill="#1D2735"
-              />
-              <path
-                d="M11.2369 4.10318C11.7005 4.10318 12.0763 3.72736 12.0763 3.26376C12.0763 2.80017 11.7005 2.42435 11.2369 2.42435C10.7733 2.42435 10.3975 2.80017 10.3975 3.26376C10.3975 3.72736 10.7733 4.10318 11.2369 4.10318Z"
-                fill="#1D2735"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_3_31">
-                <rect
-                  width="14"
-                  height="14"
-                  fill="white"
-                  transform="translate(0.5)"
-                />
-              </clipPath>
-            </defs>
-          </svg>
-          <svg
-            width="15"
-            height="14"
-            viewBox="0 0 15 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.83187 2.32458H11.11V0.0985833C10.8895 0.06825 10.1311 0 9.24796 0C7.40521 0 6.14288 1.15908 6.14288 3.28942V5.25H4.10938V7.7385H6.14288V14H8.63604V7.73908H10.5873L10.897 5.25058H8.63546V3.53617C8.63604 2.81692 8.82971 2.32458 9.83187 2.32458Z"
-              fill="#1D2735"
-            />
-          </svg>
-          <svg
-            width="15"
-            height="14"
-            viewBox="0 0 15 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.72508 1.16666L6.21675 7.59268L1.66675 12.8333H2.65841L6.62508 8.27896L9.83341 12.8333H13.3334L8.55008 6.03297L12.7501 1.16666H11.7584L8.08341 5.40908L5.10841 1.16666H1.72508ZM3.24175 1.91532H4.81675L11.8751 11.9599H10.3001L3.24175 1.91532Z"
-              fill="#1D2735"
-            />
-          </svg>
-        </div>
-        <h6 className="">© All rights reserved. Made by Blue Digital</h6>
+  return (
+    <div className="flex flex-wrap justify-around items-center text-[#4E5562] py-6 px-4 mt-[110px]">
+      <div className="flex items-center gap-2 text-center sm:text-left">
+        <h6>Need help?</h6>
+        <h6 className="font-bold">Contact us</h6>
       </div>
-    );
-  }
-  
-  export default Footer;
+
+      <div className="flex items-center gap-4 mt-4 sm:mt-0">
+        <img
+          src={instaIcon}
+          alt="Instagram icon"
+        />
+        <img
+          src={fbIcon}
+          alt="Facebook icon"
+        />
+        <img
+          src={xIcon}
+          alt="X icon"
+        />
+      </div>
+
+      <h6 className="text-center sm:text-right w-full sm:w-auto mt-4 sm:mt-0">
+        © All rights reserved. Made by <strong>Blue</strong> <strong>Digital</strong>
+      </h6>
+    </div>
+  );
+}
+
+export default Footer;
