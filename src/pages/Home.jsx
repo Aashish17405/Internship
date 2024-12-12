@@ -6,7 +6,7 @@ import Searchbar from '../components/Searchbar';
 
 function Home() {
   return (
-    <div className='text-[#4E5562]'>
+    <div className='text-[#4E5562] flex flex-col min-h-screen'>
       <Navbar />
       <div className="flex justify-center items-center mt-20">
         <h3 className="text-xl text-center">ELSO Solar Business Directory</h3>

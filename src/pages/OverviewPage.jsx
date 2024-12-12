@@ -57,7 +57,7 @@ function OverviewPage() {
     },
   ];
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       <Searchbar />
       <div className="py-5 ml-20 mr-24">
