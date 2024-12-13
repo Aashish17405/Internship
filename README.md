@@ -19,16 +19,16 @@
 
 ## 🔗 Table of Contents
 
-- [📁 Project Structure](#📁-project-structure)
-  - [📂 Project Index](#📂-project-index)
-- [🚀 Getting Started](#🚀-getting-started)
-  - [☑️ Prerequisites](#☑️-prerequisites)
-  - [⚙️ Installation](#⚙️-installation)
-  - [🤖 Usage](#usage)
+- [📁 Project Structure](#project-structure)
+  - [📂 Project Index](#project-index)
+- [🚀 Getting Started](#getting-started)
+  - [☑️ Prerequisites](#prerequisites)
+  - [⚙️ Installation](#installation)
+  - [🤖Usage](#usage)
 
 
 
-## 📁 Project Structure
+## Project Structure
 
 ```sh
 └── Internship-Assignment/
@@ -95,7 +95,7 @@
 ```
 
 
-### 📂 Project Index
+### Project Index
 <details open>
 	<summary><b><code>INTERNSHIP-ASSIGNMENT/</code></b></summary>
 	<details> <!-- __root__ Submodule -->
@@ -237,9 +237,9 @@
 </details>
 
 ---
-## 🚀 Getting Started
+## Getting Started
 
-### ☑️ Prerequisites
+### Prerequisites
 
 Before getting started with Internship-Assignment, ensure your runtime environment meets the following requirements:
 
@@ -247,7 +247,7 @@ Before getting started with Internship-Assignment, ensure your runtime environme
 - **Package Manager:** Npm
 
 
-### ⚙️ Installation
+### Installation
 
 Install Internship-Assignment using one of the following methods:
 
@@ -275,7 +275,7 @@ Install Internship-Assignment using one of the following methods:
 
 
 
-### 🤖 Usage
+### Usage
 Run Internship-Assignment using the following command:
 **Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
 
