@@ -87,7 +87,7 @@ function ResultPage(){
         }
     ];
 
-    return <div className="text-[#4E5562] flex flex-col min-h-screen">
+    return <div className="font-inter text-[#4E5562] flex flex-col min-h-screen">
         <Navbar />
         <Searchbar />
         <div className="container mx-auto px-4 md:px-8 mt-10">

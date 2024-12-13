@@ -6,14 +6,14 @@ function Navbar() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex justify-between items-center ml-20 py-5 mr-24">
+    <div className="flex justify-between items-center mx-28 py-5">
       <button onClick={() => navigate('/')}>
       <img 
         src={logo} 
         alt='logo'
         />
         </button>
-      <Button btnContent={"+ Add Expense"} />
+      <Button btnContent={"+ Add business"} onclickHandler={() => navigate('/add_company')} />
     </div>
   );
 }
