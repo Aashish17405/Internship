@@ -19,12 +19,13 @@
 
 ## 🔗 Table of Contents
 
-- [📁 Project Structure](#project-structure)
-  - [📂 Project Index](#project-index)
-- [🚀 Getting Started](#getting-started)
-  - [☑️ Prerequisites](#prerequisites)
-  - [⚙️ Installation](#installation)
+- [📁 Project Structure](#📁-project-structure)
+  - [📂 Project Index](#📂-project-index)
+- [🚀 Getting Started](#🚀-getting-started)
+  - [☑️ Prerequisites](#☑️-prerequisites)
+  - [⚙️ Installation](#⚙️-installation)
   - [🤖 Usage](#🤖-usage)
+
 
 
 ## 📁 Project Structure
